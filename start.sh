@@ -6,7 +6,7 @@ source venv/bin/activate
 # Start Backend
 echo "Starting backend..."
 cd backend
-uvicorn main:app --reload &
+uvicorn app.main:app --reload &
 BACKEND_PID=$!
 cd ..
 

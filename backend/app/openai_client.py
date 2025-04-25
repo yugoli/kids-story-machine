@@ -1,6 +1,10 @@
 from openai import OpenAI
 import os
+from dotenv import load_dotenv
+load_dotenv()
+#print("Loaded OPENAI_API_KEY:", os.getenv("OPENAI_API_KEY"))
 
+# Initialize OpenAI client
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
 def generate_story(request):
